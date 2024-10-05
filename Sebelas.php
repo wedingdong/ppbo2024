@@ -1,13 +1,13 @@
 <?php
 
 require_once 'vendor/autoload.php';
-use App\Admin\Dosen;
+use App\Admin\Pegawai;
 
-$dian = new Dosen();
-$dian->nama = 'Dian Prawira';
-$dian->nip = '198411132015041001';
-$dian->setNoHp(62111111);
-$dian->alamat = 'Jln Purnama';
-$dian->nidn = '0013118405';
-$dian->mengajar();
-?>
+$dosen = new Pegawai();
+$dosen->nama = 'Dian Prawira';
+$dosen->nip = '198411132015041001';
+$dosen->setNoHp(62111111);
+$dosen->alamat = 'Jln Purnama';
+
+echo "No HP Dosen: " . $dosen->getNoHp();
+
